@@ -2,7 +2,7 @@
 
 ## 📌 Description
 
-TutoAppFormations est une application mobile développée avec **.NET MAUI** permettant d’afficher et de consulter une liste de formations.
+AppFormations est une application mobile développée avec **.NET MAUI** permettant d’afficher et de consulter une liste de formations.
 
 L’application consomme une **API REST développée en ASP.NET Core** pour récupérer les données des formations.
 
