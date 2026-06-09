@@ -1,0 +1,14 @@
+
+                ***PACKAGE NuGet***
+
+•Package NuGet CommunityTooKit.Maui version 5.2.0 
+
+•Communitytoolkit.Mvvm(Models views viewmodel ) version 8.4.0
+
+J'insère ça pour utiliser tous les outils du package NuGet CommunityTooKit.Maui -> xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+
+*J'insère cette balise dans la balise Shell pour modifier la couleur au dessus du HEADER ->
+
+<Shell.Behaviors>
+    <toolkit:StatusBarBehavior StatusBarColor="{StaticResource Primary}" />
+</Shell.Behaviors>

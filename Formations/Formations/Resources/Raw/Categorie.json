@@ -1,0 +1,51 @@
+  [
+    {
+      "titre": "Dévelopement",
+      "count": 10,
+      "desc": "Apprenez le developpemrnt informatique.",
+      "image": "icon_dev.png"
+    },
+    {
+      "titre": "Design",
+      "count": 20,
+      "desc": "Créer vos maquettes et logos",
+      "image": "icon_cible.png"
+    },
+    {
+      "titre": "Business",
+      "count": 24,
+      "desc": "Lancez vos business",
+      "image": "icon_dev.png"
+    },
+    {
+      "titre": "Gestion",
+      "count": 16,
+      "desc": "La gestion de projets",
+      "image": "icon_gestion.png"
+    },
+    {
+      "titre": "Bureautique",
+      "count": 2,
+      "desc": "Word, PowerPoint, Excel",
+      "image": "icon_ppt.png"
+    },
+    {
+      "titre": "Photo",
+      "count": 8,
+      "desc": "La retouche photo",
+      "image": "icon_photo.png"
+    },
+    {
+      "titre": "Vidéo",
+      "count": 18,
+      "desc": "La montage vidéo",
+      "image": "icon_video.png"
+    },
+    {
+      "titre": "3D",
+      "count": 28,
+      "desc": "Création de jeux",
+      "image": "icon_modelisation.png"
+    }
+  ]
+

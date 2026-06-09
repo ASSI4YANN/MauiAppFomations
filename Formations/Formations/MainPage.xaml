@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Formations.MainPage"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             Shell.BackgroundColor="#F24D65"
+             xmlns:pages="clr-namespace:Formations.Pages"
+             >
+                               <!--Header-->
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Clicked="ToolbarItem_Clicked">
+            <ToolbarItem.IconImageSource>
+                <FontImageSource FontFamily="MaterialIcons-Regular"
+                                 Glyph="&#xe7fd;"/>
+            </ToolbarItem.IconImageSource>
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
+
+    <ScrollView>
+        <!--Bar Search-->
+    <StackLayout Margin="20">
+        <Frame Padding="10,1"
+               BorderColor="Transparent"
+               BackgroundColor="#ececec"
+               Margin="0,0,0,20">
+
+            <SearchBar Placeholder="Rechercher votre Formation.." BackgroundColor="Transparent"/>
+        </Frame>
+            <!--Listview -->
+            <ListView x:Name="lv" SeparatorColor="Transparent"
+                      RowHeight="98"
+                      BackgroundColor="White">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <!--Liste de  formations -->
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="2*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Image Grid.Column="0" 
+                                       Source="{Binding Image}"
+                                       Aspect="AspectFill"
+                                       HeightRequest="80"
+                                       Margin="0,0,20,0"/>
+
+                                <Label Grid.Column="1"
+                                       Text="{Binding Titre}"
+                                       FontAttributes="Bold"
+                                       FontSize="18"/>
+                                <Label Grid.Column="1"
+                                       Text="{Binding Desc}"
+                                       FontAttributes="Bold"
+                                       FontSize="16"
+                                       LineHeight="0.8"
+                                       VerticalOptions="Center"/>
+
+                                <!--- Pour mettre 10 et 9 côte à côte-->
+
+                                <HorizontalStackLayout Grid.Column="1">
+                                    <Label Text="{Binding Count}"                   
+                                           FontAttributes="Bold"
+                                           VerticalOptions="End"
+                                           Margin="0,0,4,0"/>
+
+                                    <Label Text="Cours"
+                                          FontAttributes="Bold"
+                                          VerticalOptions="End"/>
+
+                                </HorizontalStackLayout>
+
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+  </ScrollView>
+</ContentPage>
