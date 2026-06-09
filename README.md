@@ -1,4 +1,4 @@
-# 📱 TutoAppFormations - Application Mobile MAUI
+# 📱 AppFormations - Application Mobile MAUI
 
 ## 📌 Description
 
@@ -103,4 +103,4 @@ Sélectionne un appareil Android ou un émulateur puis clique sur **Run**.
 
 ## 👨‍💻 Auteur
 
-Projet réalisé dans le cadre d’une formation .NET / DevOps
+Projet réalisé dans le cadre d’une formation .NET MAUI
